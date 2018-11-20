@@ -1,0 +1,16 @@
+<svg id="arrow02" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #005f79;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="楕円形_715" data-name="楕円形 715" class="cls-1" cx="10.5" cy="10.5" r="10.5"/>
+  <path id="多角形_1" data-name="多角形 1" class="cls-2" d="M926,2800.01l5-6H921Z" transform="translate(-915 -2786)"/>
+</svg>

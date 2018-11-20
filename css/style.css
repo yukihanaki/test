@@ -1,0 +1,462 @@
+/*---------------------------------------------------
+		base
+----------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.0rem;
+  color: #333;
+  line-height: 1.7;
+  background: #fff;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+/*---------------------------------------------------
+		parts
+----------------------------------------------------*/
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 70px;
+    padding: 20px 0;
+    background-color: #eee;
+    text-align: center;
+}
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 28px 19px 0 19px;
+    border-color: #eee transparent transparent transparent;
+}
+
+@media screen and (max-width: 750px) {
+    h2 {
+        margin-bottom: 6%;
+        padding: 20px 0;
+    }
+    h2::after {
+        bottom: -18px;
+        border-width: 18px 12px 0 12px;
+    }
+}
+
+
+/*---------------------------------------------------
+		sample1
+----------------------------------------------------*/
+
+
+.sample1 {
+    margin-bottom: 50px;
+    padding: 44px 0;
+    background: url(../img/bg.jpg) center 0 repeat;
+    text-align: center;
+}
+.sample1 p {
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+}
+.sample1 ul {
+    display: flex;
+}
+.sample1 li:not(:first-child) {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .sample1 {
+        margin-bottom: 40px;
+        padding: 30px 0;
+    }
+    .sample1 h2 {
+        margin-bottom: 18px;
+    }
+    .sample1 p {
+        font-size: 1.3rem;
+    }
+    .sample1 ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .sample1 li {
+        max-width: 48%;
+        margin-bottom: 2%;
+    }
+    .sample1 li:not(:first-child) {
+        margin-left: 0;
+    }
+
+}
+
+
+/*---------------------------------------------------
+		sample2
+----------------------------------------------------*/
+
+.sample2 {
+    margin-bottom: 60px;
+}
+.sample2 .text {
+    margin-bottom: 34px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.sample2 ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 670px;
+    margin: 0 auto 34px;
+}
+.sample2 .notes {
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.text_link {
+    text-align: center;
+}
+.text_link a{
+    font-size: 1.8rem;
+    color: #df0024!important;
+    text-decoration: underline!important;
+}
+@media screen and (max-width: 750px) {
+    .sample2 {
+        margin-bottom: 30px;
+    }
+    .sample2 .text {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+    .sample2 ul {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+    .sample2 .notes {
+        font-size: 1rem;
+    }
+    .text_link a{
+        font-size: 1.3rem;
+    }
+}
+
+/*---------------------------------------------------
+		sample3
+----------------------------------------------------*/
+
+.sample3 {
+    margin-bottom: 60px;
+}
+.sample3 p {
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+    text-align: center;
+}
+table,th,td{
+    border-collapse: collapse;
+    border: 2px solid #005f79;
+}
+table {
+    width: 100%;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+}
+th {
+    padding: 0 1em;
+    background-color: #005f79;
+    font-weight: normal;
+}
+th.bgc {
+    background-color: #e5eff1;
+}
+th.bbc {
+    border-bottom-color: #fff;
+}
+td {
+    padding: .4em 1em;
+}
+td span {
+    font-weight: bold;
+}
+.sample3 .notes li {
+    padding-left: 1em;
+    text-indent: -1em;
+    font-size: 1.4rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    .sample3 {
+        margin-bottom: 30px;
+    }
+    .sample3 p {
+        font-size: 1.3rem;
+    }
+    table,th,td{
+        border: 1px solid #005f79;
+    }
+    table {
+        font-size: 1.2rem;
+    }
+    td {
+        padding: 1em;
+    }
+    .sample3 .notes li {
+        font-size: 1rem;
+    }
+}
+
+/*---------------------------------------------------
+		sample4
+----------------------------------------------------*/
+
+.sample4 {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #dcdcdc;
+}
+.sample4 p {
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.sample4 .box {
+    display: flex;
+    border: 4px solid #005f79;
+    border-radius: 10px;
+}
+.sample4 .box h3 {
+    width: 20%;
+    padding-top: 20px;
+    background-color: #005f79;
+    text-align: center;
+}
+.sample4 .box .list {
+    width: 80%;
+    padding: 30px 50px;
+}
+.sample4 .box .list li {
+    margin-bottom: 1em;
+    padding-left: 2em;
+    background: url(../img/arrow01.svg) 0 .3em no-repeat;
+    background-size: 23px 23px;
+    font-size: 1.8rem;
+}
+.sample4 .box .more {
+    width: 470px;
+    margin: 0 auto;
+    padding: .5em 0;
+    background: url(../img/arrow02.svg) right 10px center no-repeat;
+    border: 2px solid #005f79;
+    text-align: center;
+}
+.sample4 .box .more a {
+    display: block;
+    width: 100%;
+    color: #005f79;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 750px) {
+    .sample4 {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .sample4 p {
+        font-size: 1.3rem;
+    }
+    .sample4 .box {
+        display: block;
+        border: 2px solid #005f79;
+        border-radius: 10px;
+    }
+    .sample4 .box h3 {
+        width: 100%;
+        padding: 5px 0;
+        border-radius: 6px 6px 0 0;
+    }
+    .sample4 .box .list {
+        width: 100%;
+        padding: 20px 6%;
+    }
+    .sample4 .box .list li {
+        margin-bottom: 1em;
+        padding-left: 1.6em;
+        background: url(../img/arrow01.svg) 0 .3em no-repeat;
+        background-size: 15px 15px;
+        font-size: 1.3rem;
+    }
+    .sample4 .box .more {
+        width: 70%;
+        border: 1px solid #005f79;
+    }
+    .sample4 .box .more a {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*---------------------------------------------------
+		tel
+----------------------------------------------------*/
+
+.tel {
+    border: 4px solid #ffe100;
+}
+.tel h3 {
+    padding: .5em 1em;
+    background-color: #ffe100;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.tel .tel_container {
+    padding: 16px 24px 20px;
+}
+.tel .time {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+.tel .box {
+    display: flex;
+    margin-bottom: 14px;
+    font-size: 1.6rem;
+}
+.tel a {
+    color: #0669b2;
+    text-decoration: underline;
+}
+.tel .eo {
+    width: 50%;
+    padding-right: 20px;
+    border-right: 2px solid #dcdcdc;
+}
+.tel .eo p {
+    line-height: 1.4;
+}
+.tel .other {
+    width: 50%;
+    padding-left: 20px;
+}
+.tel .img {
+    display: block;
+    margin-bottom: 10px;
+}
+.tel .right {
+    display: block;
+    background: url(../img/arrow03.svg) right center no-repeat;
+    background-size: auto 80%;
+    padding-right: 1.6em;
+    text-align: right;
+}
+.tel .mail {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.tel .notes {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .tel {
+        border: 2px solid #ffe100;
+    }
+    .tel h3 {
+        font-size: 1.5rem;
+    }
+    .tel .tel_container {
+        padding: 3% 5% 5%;
+    }
+    .tel .time {
+        font-size: 1.3rem;
+    }
+    .tel .box {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .tel .eo {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-right: 0;
+        padding-bottom: 10px;
+        border-right: none;
+        border-bottom: 2px solid #dcdcdc;
+    }
+    .tel .other {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 6%;
+    }
+    .tel .img {
+        margin-bottom: 8px;
+    }
+    .tel .right {
+        display: inline-block;
+        text-align: left;
+    }
+    .tel .mail {
+        margin-bottom: 8px;
+    }
+    .tel .notes {
+        font-size: 1rem;
+    }
+}
